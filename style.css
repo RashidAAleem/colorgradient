@@ -1,0 +1,141 @@
+/* Global Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Body Styling */
+body {
+  display: flex;
+  height: 100vh;
+  
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-image: linear-gradient(to right top, #a29dcd, #a1e410);
+}
+
+/* Main Container */
+.mainContainer {
+  width: 50vw;
+  height: 30vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 50px; /* Added consistent spacing */
+}
+h1{
+  text-align: center;
+  text-decoration: underline;
+  
+}
+/* Button Styling */
+.btn1,
+.btn2 {
+  
+  margin: 10px 50px;
+  padding: 15px 40px;
+  border-radius: 20px;
+  border: none;
+  font-size: 1rem; /* Added consistent font size */
+  cursor: pointer;
+  transition: all 0.3s ease; /* Improved transition for smoother effects */
+  box-shadow: 3px 5px 10px rgba(0, 0, 0, 0.8);
+}
+
+.btn1 {
+  background-color: black;
+  color: white;
+}
+
+.btn2 {
+  background-color: yellowgreen;
+  color: black;
+}
+
+.btn1:hover {
+  background-color: #8a2727;
+}
+
+.btn2:hover {
+  background-color: #295f9d;
+  color: white;
+}
+
+.btn1:active,
+.btn2:active {
+  transform: scale(0.95); /* Improved scaling effect */
+}
+
+/* Gradient Code Container */
+.gradientCode {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(98, 73, 237, 0.1);
+  box-shadow: 3px 5px 10px rgba(0, 0, 0, 0.8);
+  border-radius: 10px;
+  width: 50vw;
+  height: 10vh;
+  font-size: 1.2rem;
+  font-weight: 600;
+  /* text-align: center; */
+  padding: 10px; /* Added padding for better spacing */
+  transition: scale 0.3s ease;
+}
+.gradientCode:active{
+  scale: 0.9
+}
+
+/* Heading Styling */
+h4 {
+  font-size: .8rem;
+  margin-bottom: 10px; /* Added margin for spacing */
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+  .mainContainer {
+    width: 90%;
+    height: auto;
+    padding: 0px;
+    /* margin: 20px; */
+
+    /* align-items: center; */
+  }
+
+  .btn1,
+  .btn2 {
+    display: flex;
+    align-items: center;
+    padding: 12px 50px;
+    margin: 30px 0px;
+    font-size: 0.9rem;
+    
+  }
+
+  .gradientCode {
+    width: 80%;
+    font-size: 0.9rem;
+    font-weight: 550;
+    padding: 10px;
+    text-align: center;
+  }
+}
+
+@media (max-width: 480px) {
+  /* .btn1,
+  .btn2 {
+    padding: 12px 50px;
+    margin: 30px 0px;
+    font-size: 0.9rem;
+  } */
+
+  /* .gradientCode {
+    width: 90%;
+    font-size: 0.9rem;
+    padding: 8px;
+  } */
+}
